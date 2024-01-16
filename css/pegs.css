@@ -1,0 +1,196 @@
+/* pegs css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+.pegs_main_container {
+  margin: 40px auto;
+  overflow: hidden;
+  width: 326px;
+  color: #acad90;
+  font-family: arial;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pegs_main_container a {
+  color: #acad90;
+  text-decoration: none;
+  border: none;
+}
+
+.pegs_main_container a:hover {
+  color: #303b4a;
+}
+
+.pegs_main_container ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pegs_info_top {
+  margin: 0 auto 3px auto;
+}
+
+.pegs_info_bottom {
+  margin: 3px auto 0 auto;
+}
+
+.pegs_info_top,
+.pegs_info_bottom {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.pegs_help_popup {
+  position: relative;
+  height: 320px;
+  font-size: 12px;
+  text-align: left;
+  background: #ededed;
+  color: #303b4a;
+  z-index: 999;
+}
+
+.pegs_help_top {
+  padding: 15px 20px 0px 20px;
+}
+
+.pegs_help_top span {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.pegs_help_top a {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.pegs_help_top a.selected {
+  color: #303b4a;
+}
+.pegs_help_popup p {
+  padding: 0px 20px 10px 20px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.pegs_help_howtoplay,
+.pegs_help_howtoplay {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+}
+
+.pegs_moves {
+  float: left;
+  width: 100px;
+}
+
+.pegs_info_logo {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.pegs_info_logo img {
+  float: left;
+}
+
+.pegs_message {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  font-weight: bold;
+  color: #f47c7c;
+}
+
+.pegs_start_over,
+.pegs_help {
+  float: right;
+  text-align: right;
+  cursor: pointer;
+}
+
+.pegs_undo {
+  float: left;
+  text-align: right;
+  cursor: pointer;
+}
+
+.pegs_board_container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 290px;
+  border: solid 1px #b7b895;
+  text-align: center;
+  background-image: url("../res/pegs_board.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e4e4cf;
+}
+
+.pegs_board {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
+.pegs_board li {
+  position: relative;
+  display: inline-block;
+  margin: 1px 4px;
+  width: 32px;
+  height: 32px;
+  background: url("../res/slot.png") no-repeat;
+}
+
+.pegs_board li img.peg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 26px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 888;
+}
+
+.pegs_completion {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 326px;
+  height: 290px;
+  background: #96977a;
+  z-index: 999;
+  zoom: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -khtml-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.pegs_completion p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.pegs_completion p:first-child {
+  padding-top: 52px;
+}

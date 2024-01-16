@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Peg Solitare!" />
+    <link rel="stylesheet" href="css/pegs.css" />
+    <title>Peg Solitare</title>
+  </head>
+  <body>
+    <div class="pegs_main_container">
+      <div class="pegs_info_top">
+        <div class="pegs_info_logo">
+          <img src="res/pegs_logo.png" alt="Peg Solitare Logo" />
+        </div>
+        <span class="pegs_moves">Moves: <span>0</span></span>
+        <span class="pegs_message" style="display: none"></span>
+        <a href="#" class="pegs_help">?</a>
+      </div>
+      <div class="pegs_board_container">
+        <div class="pegs_help_popup" style="display: none">
+          <div class="pegs_help_top">
+            <a href="#" class="pegs_lnk_howtoplay selected">How to play</a>
+            <a href="#" class="pegs_lnk_history">History</a>
+          </div>
+          <div class="pegs_help_howtoplay">
+            <p>
+              Peg Solitaire is a board game for one player involving movement of
+              pegs on a board with holes.
+            </p>
+            <p>The objective is to eliminate all but one peg off the board.</p>
+            <p>
+              A valid move is to jump a peg horizontally or vertically over an
+              adjacent peg into a hole two positions away which will remove the
+              jumped peg.
+            </p>
+          </div>
+          <div class="pegs_help_history" style="display: none">
+            <p>
+              According to a popular story, the game was invented by a French
+              aristocrat in the 17th century, when incarcerated in the Bastille,
+              explaining the game's less common name Solo Noble. In other
+              sources, the invention of the game is attributed to the Native
+              Americans.
+            </p>
+            <p>
+              The first evidence of the game can be traced back to the court of
+              Louis XIV, and the specific date of 1697, with an engraving made
+              that year by Claude Auguste Berey of Anne de Rohan-Chabot,
+              Princess of Soubise, with the puzzle by her side. Several works of
+              art from that time show peg solitaire boards, demonstrating that
+              the game was highly fashionable.
+            </p>
+            <p>
+              <i>Adapted from source</i>:
+              <a
+                href="http://en.wikipedia.org/wiki/Peg_solitaire"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="pegs_completion" style="display: none"></div>
+        <div class="pegs_board">
+          <ul>
+            <li id="13" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="14" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="15" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+          <ul>
+            <li id="23" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="24" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="25" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+          <ul>
+            <li id="31" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="32" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="33" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="34" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="35" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="36" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="37" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+          <ul>
+            <li id="41" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="42" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="43" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="44" class="o"></li>
+            <li id="45" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="46" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="47" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+          <ul>
+            <li id="51" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="52" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="53" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="54" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="55" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="56" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="57" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+          <ul>
+            <li id="63" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="64" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="65" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+          <ul>
+            <li id="73" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="74" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+            <li id="75" class="x">
+              <img class="peg" src="res/peg.png" alt="peg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pegs_info_bottom">
+        <a href="#" class="pegs_undo">Undo</a>
+        <a href="#" class="pegs_start_over">Start Over</a>
+      </div>
+    </div>
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="script/jquery-ui-1.8.18.custom.min.js"
+    ></script>
+    <script type="text/javascript" src="script/pegs.js"></script>
+  </body>
+</html>
